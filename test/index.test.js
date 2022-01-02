@@ -4,6 +4,7 @@ const { sum } = require("../index.js");
 
 describe("Test Math Functions", () => {
   it("Test sum function", () => {
-    assert.equal(sum([1, 2, 5], 8));
+    assert.equal(sum([1, 2, 5]), 8);
+    assert.notEqual(sum([1, 1]), 4);
   });
 });
